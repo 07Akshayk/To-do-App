@@ -8,7 +8,6 @@ const App = () => {
   const [error, setError] = useState(null)
   const [todo, setTodo] = useState('')
   const [todos, setTodos] = useState([])
-
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem('todos'))
     if (storedTodos) setTodos(storedTodos)
